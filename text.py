@@ -23,3 +23,6 @@ class Stack:
  
     def size(self):       
         return len(self.items)
+
+Num = Stack()
+Ops = input().split()
