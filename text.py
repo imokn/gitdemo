@@ -45,3 +45,4 @@ for i in range(len(Ops)):
         Num.push(a / b)
     else:
         Num.push(int(Ops[i]))
+print('%.2f'%Num.peek())
