@@ -26,3 +26,22 @@ class Stack:
 
 Num = Stack()
 Ops = input().split()
+for i in range(len(Ops)):
+    if Ops[i] == '+':
+        b = Num.pop()
+        a = Num.pop()
+        Num.push(a + b)
+    elif Ops[i] == '-':
+        b = Num.pop()
+        a = Num.pop()
+        Num.push(a - b)
+    elif Ops[i] == '*':
+        b = Num.pop()
+        a = Num.pop()
+        Num.push(a * b)
+    elif Ops[i] == '/':
+        b = Num.pop()
+        a = Num.pop()
+        Num.push(a / b)
+    else:
+        Num.push(int(Ops[i]))
