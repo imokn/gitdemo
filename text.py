@@ -46,3 +46,6 @@ for i in range(len(Ops)):
     else:
         Num.push(int(Ops[i]))
 print('%.2f'%Num.peek())
+#Using for testing
+#123
+#456
